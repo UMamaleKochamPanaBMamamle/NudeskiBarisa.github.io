@@ -2,7 +2,6 @@ body{
   text-align: center;
   margin: auto;
   float: center;
-  line-height: 1.5;
   vertical-align: middle;
   background-color: #222226;
   color: #0c4;
@@ -48,7 +47,7 @@ video {
   font-weight: bold;
   font-size: 65%;
 }
-ls{
+#list{
   text-align: center;
   position: absolute;
   left: 50%;
@@ -57,7 +56,6 @@ ls{
   width: 100%;
   font-size: 250%;
   font-weight: bold;
-  line-height: 1.5em;
 }
 a{
   color: #38F;
