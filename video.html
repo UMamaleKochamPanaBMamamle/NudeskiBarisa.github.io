@@ -12,24 +12,22 @@
     <script type="text/javascript">
       switch (localStorage.getItem('vidname')) {
         case "BDivideOP1":
-          document.write('<video controls><source src="./BDivideOP1.mkv" type=\'video/mp4; codecs="av01.0.05M.08,mp4a.40.2"\'/></video>');
-          document.getElementsByTagName('video')[0].volume = 0.55;
+          var source="./BDivideOP1.mkv",type='video/mp4; codecs="av01.0.05M.08,mp4a.40.2"',vol = 0.55;
           break;
         case "KumoED1":
-          document.write('<video controls><source src="KumoED1.mkv" type=\'video/mp4; codecs="av01.0.05M.08,opus"\' /></video>');
-          document.getElementsByTagName('video')[0].volume = 0.25;
+          var source="./KumoED1.mkv",type='video/mp4; codecs="av01.0.05M.08,opus"',vol = 0.25;
           break;
         case "Dirty":
-          document.write('<video controls><source src="Dirty.webm" type="video/webm" /></video>');
-          document.getElementsByTagName('video')[0].volume = 0.2;
+          var source="./Dirty.webm",type='video/webm',vol = 0.2;
           break;
         case "Grisaia no Kajitsu":
-          document.write('<video controls><source src="Grisaia no Kajitsu.mkv" type=\'video/mp4; codecs="av01.0.05M.08,mp4a.40.2"\' /></video>');
-          document.getElementsByTagName('video')[0].volume = 0.25;
+          var source="./Grisaia no Kajitsu.mkv",type='video/mp4; codecs="av01.0.05M.08,mp4a.40.2"',vol = 0.25;
           break;
         default:
           document.write('<p style="color: #f63;"><b>Error:</b> Unselected video</p>');
       }
+      document.write("<video controls><source src='"+source+"' type='"+type+"' /></video>");
+      document.getElementsByTagName('video')[0].volume = vol;
     </script>
   </body>
 </html>
