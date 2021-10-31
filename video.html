@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Build Divide OP1</title>
+  </head>
+  <body>
+    <input type="button" onclick="location.href = './list.html'" value="Video List" id="videolist"/>
+    <script src="./script.js"></script>
+    <script type="text/javascript">
+      switch (localStorage.getItem('vidname')) {
+        case "BDivideOP1":
+          document.write('<video controls><source src="./BDivideOP1.mkv" type=\'video/mp4; codecs="av01.0.05M.08,mp4a.40.2"\'/></video>');
+          document.getElementsByTagName('video')[0].volume = 0.55;
+          break;
+        case "KumoED1":
+          document.write('<video controls><source src="KumoED1.mkv" type=\'video/mp4; codecs="av01.0.05M.08,opus"\' /></video>');
+          document.getElementsByTagName('video')[0].volume = 0.25;
+          break;
+        case "Dirty":
+          document.write('<video controls><source src="Dirty.webm" type="video/webm" /></video>');
+          document.getElementsByTagName('video')[0].volume = 0.2;
+          break;
+        case "Grisaia no Kajitsu":
+          document.write('<video controls><source src="Grisaia no Kajitsu.mkv" type=\'video/mp4; codecs="av01.0.05M.08,mp4a.40.2"\' /></video>');
+          document.getElementsByTagName('video')[0].volume = 0.25;
+          break;
+        default:
+          document.write('<p style="color: #f63;"><b>Error:</b> Unselected video</p>');
+      }
+    </script>
+  </body>
+</html>
