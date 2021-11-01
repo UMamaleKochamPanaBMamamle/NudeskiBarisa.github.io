@@ -1,0 +1,28 @@
+videos = [
+    {
+      title:"Kumo Desu Ga Nani Ka? Ending 1",
+      source:"./KumoED1.mkv",
+      type:'video/mp4; codecs="av01.0.05M.08,opus"',
+      vol:0.25
+    },{
+      title:"Dirty AMV [Link Click]",
+      source:"./Dirty.webm",
+      type:'video/webm',
+      vol:0.2
+    },{
+      title:"Build Divide: Code Black Opening 1",
+      source:"./BDivideOP1.mkv",
+      type:'video/mp4; codecs="av01.0.05M.08,mp4a.40.2"',
+      vol:0.55
+    },{
+      title:"Grisaia no Kajitsu Ep1 Scene (NSFW)",
+      source:"./Grisaia no Kajitsu.mkv",
+      type:'video/mp4; codecs="av01.0.05M.08,mp4a.40.2"',
+      vol:0.25
+    },{
+      title:"Mob Vote in a nutshell",
+      source:"./Mob Vote in a nutshell.mp4",
+      type:'video/mp4;',
+      vol:0.1
+    }
+  ];

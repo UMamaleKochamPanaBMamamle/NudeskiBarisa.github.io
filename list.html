@@ -7,22 +7,11 @@
   </head>
   <body>
     <ls id="list" style="width:600px">
-        <p><input type="button"
-          onclick="localStorage.setItem('vidname', 'KumoED1');location.href='./video.html'"
-          value="Kumo Desu Ga Nani Ka? Ending 1" id="vlink">
-        </p>
-        <p><input type="button"
-          onclick="localStorage.setItem('vidname', 'Dirty');location.href='./video.html'"
-          value="Dirty AMV [Link Click]" id="vlink">
-        </p>
-        <p><input type="button"
-          onclick="localStorage.setItem('vidname', 'BDivideOP1');location.href='./video.html'"
-          value="Build Divide: Code Black Opening 1" id="vlink">
-        </p>
-        <p><input type="button"
-          onclick="localStorage.setItem('vidname', 'Grisaia no Kajitsu');location.href='./video.html'"
-          value="Grisaia no Kajitsu Ep1 Scene (NSFW)" id="vlink">
-        </p>
+      <script src="videos.json"></script>
+      <script>
+      for(var i=0;i<videos.length;i++)
+        document.write("<p><input type=\"button\" onclick=\"localStorage.setItem('vidID', "+i+");location.href='./video.html'\" value='"+videos[i]['title']+"' id=\"vlink\"></p>");
+      </script>
     </ls>
   </body>
 </html>

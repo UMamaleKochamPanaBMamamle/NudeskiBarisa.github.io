@@ -4,30 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Build Divide OP1</title>
+    <script src="videos.json"></script>
+    <script>
+      var x = localStorage.getItem('vidID');
+      document.write("<title>"+videos[x]['title']+"</title>");
+    </script>
   </head>
   <body>
     <input type="button" onclick="location.href = './list.html'" value="Video List" id="videolist"/>
-    <script src="./script.js"></script>
     <script type="text/javascript">
-      switch (localStorage.getItem('vidname')) {
-        case "BDivideOP1":
-          var source="./BDivideOP1.mkv",type='video/mp4; codecs="av01.0.05M.08,mp4a.40.2"',vol = 0.55;
-          break;
-        case "KumoED1":
-          var source="./KumoED1.mkv",type='video/mp4; codecs="av01.0.05M.08,opus"',vol = 0.25;
-          break;
-        case "Dirty":
-          var source="./Dirty.webm",type='video/webm',vol = 0.2;
-          break;
-        case "Grisaia no Kajitsu":
-          var source="./Grisaia no Kajitsu.mkv",type='video/mp4; codecs="av01.0.05M.08,mp4a.40.2"',vol = 0.25;
-          break;
-        default:
-          document.write('<p style="color: #f63;"><b>Error:</b> Unselected video</p>');
-      }
-      document.write("<video controls><source src='"+source+"' type='"+type+"' /></video>");
-      document.getElementsByTagName('video')[0].volume = vol;
+      document.write("<video controls><source src='"+videos[x]['source']+"' type='"+videos[x]['type']+"' /></video>");
+      document.getElementsByTagName('video')[0].volume = videos[x]['vol'];
     </script>
+    <script src="./script.js"></script>
   </body>
 </html>
