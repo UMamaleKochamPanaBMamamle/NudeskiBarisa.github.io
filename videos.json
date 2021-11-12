@@ -24,5 +24,10 @@ videos = [
       source:"./Mob Vote in a nutshell.mp4",
       type:'video/mp4;',
       vol:0.1
+    },{
+      title:"Assasin Isekai ED",
+      source:"./AssasinED1.mkv",
+      type:'video/mp4; codecs="av01.0.05M.08,mp4a.40.2"',
+      vol:0.35
     }
   ];
