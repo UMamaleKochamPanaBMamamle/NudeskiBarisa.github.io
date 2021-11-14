@@ -35,7 +35,8 @@ function resizevideo(){
   }
 }
 var button = document.getElementById('videolist');
-var res, vid = document.getElementById('vid');
+var res = [16/9,9/16], vid = document.getElementById('vid');
+resizevideo();
 vid.addEventListener("loadedmetadata", function(){
   res = [this.videoWidth/this.videoHeight,this.videoHeight/this.videoWidth];
   resizevideo();
