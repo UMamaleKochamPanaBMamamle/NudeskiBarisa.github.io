@@ -12,10 +12,6 @@ videos = [
       source:"./BDivideOP1.mkv",
       type:'video/mp4; codecs="av01.0.05M.08,mp4a.40.2"'
     },{
-      title:"Grisaia no Kajitsu Ep1 Scene (NSFW)",
-      source:"./Grisaia no Kajitsu.mkv",
-      type:'video/mp4; codecs="av01.0.05M.08,mp4a.40.2"'
-    },{
       title:"Platinum End Opening 1",
       source:"./PlatinumEndOP1.mkv",
       type:'video/mp4; codecs="av01.0.05M.08,mp4a.40.2"'
