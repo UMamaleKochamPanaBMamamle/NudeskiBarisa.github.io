@@ -14,7 +14,10 @@
     <input type="button" onclick="location.href = './list.html'" value="Video List" id="videolist"/>
     <script type="text/javascript">
       document.write("<video id=\"vid\" controls><source src='"+videos[x]['source']+"' type='"+videos[x]['type']+"' /></video>");
-      document.getElementsByTagName('video')[0].volume = videos[x]['vol'];
+      var y = document.querySelector("video");
+      if(localStorage.getItem('vol') == null) localStorage.setItem('vol', 1)
+      y.volume = localStorage.getItem('vol');
+      y.onvolumechange = function(){localStorage.setItem('vol', y.volume)};
     </script>
     <script src="./script.js"></script>
   </body>
