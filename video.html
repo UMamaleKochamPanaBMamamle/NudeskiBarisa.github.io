@@ -14,7 +14,7 @@
   <body>
     <input type="button" onclick="location.href = './list'" value="Video List" id="videolist"/>
     <script type="text/javascript">
-      document.write("<video id=\"vid\" controls><source src='"+videos[x]['source']+"' type='"+videos[x]['type']+"' /></video>");
+      document.write("<video id=\"vid\" controls><source src='"+videos[x]['source']+"' /></video>");
       var y = document.querySelector("video");
       if(localStorage.getItem('vol') == null) localStorage.setItem('vol', 1)
       y.volume = localStorage.getItem('vol');
