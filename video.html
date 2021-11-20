@@ -7,12 +7,12 @@
     <script src="videos.json"></script>
     <script>
       var x = window.location.hash.slice(1);
-      if(typeof videos[x]==='undefined') window.location = "./list.html";
+      if(typeof videos[x]==='undefined') window.location = "./list";
       document.write("<title>"+videos[x]['title']+"</title>");
     </script>
   </head>
   <body>
-    <input type="button" onclick="location.href = './list.html'" value="Video List" id="videolist"/>
+    <input type="button" onclick="location.href = './list'" value="Video List" id="videolist"/>
     <script type="text/javascript">
       document.write("<video id=\"vid\" controls><source src='"+videos[x]['source']+"' type='"+videos[x]['type']+"' /></video>");
       var y = document.querySelector("video");
