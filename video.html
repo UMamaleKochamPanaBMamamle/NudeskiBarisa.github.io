@@ -7,6 +7,7 @@
     <script src="videos.json"></script>
     <script>
       var x = window.location.hash.slice(1);
+      if(typeof videos[x]==='undefined') window.location = "./list.html";
       document.write("<title>"+videos[x]['title']+"</title>");
     </script>
   </head>
