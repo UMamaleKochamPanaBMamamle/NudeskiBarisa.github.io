@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="videos.json"></script>
     <script>
-      var x = window.location.hash.slice(1);
+      var x = new URLSearchParams(window.location.search).get("v");
       if(typeof videos[x]==='undefined') window.location = "./list";
       document.write("<title>"+videos[x]['title']+"</title>");
     </script>
