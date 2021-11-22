@@ -14,5 +14,8 @@ videos = [
     },{
       title:"Assasin Isekai Ending 1",
       source:"./AssasinED1.mkv"
+    },{
+      title:"Grand Blue Opening",
+      source:"./Grand Blue OP.mkv"
     }
   ];
