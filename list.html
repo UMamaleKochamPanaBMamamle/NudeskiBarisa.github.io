@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>Video List</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="videos.json"></script>
+    <script src="codeurl.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <ls id="list" style="width:600px">
-      <script src="videos.json"></script>
-      <script src="codeurl.js"></script>
+    <ls id="list">
       <script>
-        for(var i=0;i<videos.length;i++) document.write("<p><input type=\"button\" onclick=\"location.href='./video?v="+encodeId(i)+"'\" value='"+videos[i]['title']+"' id=\"vlink\"></p>");
+        for(var i=0;i<videos.length;i++) document.write("<p><input type=\"button\" onclick=\"location.href='./video?v="+encodeId(i)+"'\" value='"+videos[i]['title']+"' id=\"vlink\">&emsp;<button onclick=\"navigator.clipboard.writeText('"+window.location.href.slice(0,window.location.href.length-5)+"/video?v="+encodeId(i)+"')\" id='copybutton'><span class='material-icons' id='copyicon'>content_copy</span></button></p>");
       </script>
     </ls>
   </body>

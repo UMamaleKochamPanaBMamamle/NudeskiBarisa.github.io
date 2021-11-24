@@ -61,3 +61,21 @@ a{
   font-weight: bold;
   margin: auto;
 }
+#copybutton{
+  width: 65px;
+  height: 65px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 20px;
+  border-width: 0.1em;
+  background-color: transparent;
+  border-color: #333337;
+  color: #008000;
+  position: relative;
+  left:-1em;
+  top:3px;
+}
+#copyicon{
+  font-size: 30px;
+  transform: translate(5%,5%);
+}

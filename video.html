@@ -7,7 +7,9 @@
     <script src="videos.json"></script>
     <script src="codeurl.js"></script>
     <script>
-      var x = decodeId(new URLSearchParams(window.location.search).get("v"));
+      var x = new URLSearchParams(window.location.search).get("v");
+      if(x!==null) var x = decodeId(x);
+      else window.location = "./list";
       if(typeof videos[x]==='undefined') window.location = "./list";
       document.write("<title>"+videos[x]['title']+"</title>");
     </script>
