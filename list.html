@@ -8,9 +8,9 @@
   <body>
     <ls id="list" style="width:600px">
       <script src="videos.json"></script>
+      <script src="codeurl.js"></script>
       <script>
-      for(var i=0;i<videos.length;i++)
-        document.write("<p><input type=\"button\" onclick=\"location.href='./video?v="+i+"'\" value='"+videos[i]['title']+"' id=\"vlink\"></p>");
+        for(var i=0;i<videos.length;i++) document.write("<p><input type=\"button\" onclick=\"location.href='./video?v="+encodeId(i)+"'\" value='"+videos[i]['title']+"' id=\"vlink\"></p>");
       </script>
     </ls>
   </body>
