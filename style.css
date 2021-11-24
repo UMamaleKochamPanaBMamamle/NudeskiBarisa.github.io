@@ -7,7 +7,7 @@ body{
   color: #0c4;
   font-size: 120%;
 }
-video {
+#file {
   position: absolute;
   right: var(--VposX);
   top: var(--VposY);
@@ -15,14 +15,13 @@ video {
   width: var(--width);
   height: var(--height);
   }
-#videolist{
+#filelist_button{
   position: absolute;
   left: var(--LposX);
   bottom: var(--LposY);
   width: 250px;
   height: 110px;
   padding: 12px 20px;
-  box-sizing: border-box;
   text-align: center;
   border-radius: 35px;
   border-width: 0.1em;
@@ -33,10 +32,9 @@ video {
   font-weight: bold;
   font-size: 200%;
 }
-#vlink{
+#file_button{
   width: 600px;
   padding: 24px 20px;
-  box-sizing: border-box;
   text-align: center;
   border-radius: 35px;
   border-width: 0.1em;
@@ -47,7 +45,7 @@ video {
   font-weight: bold;
   font-size: 65%;
 }
-#list{
+#file_list{
   text-align: center;
   position: absolute;
   left: 50%;
@@ -56,15 +54,9 @@ video {
   font-size: 250%;
   font-weight: bold;
 }
-a{
-  color: #38F;
-  font-weight: bold;
-  margin: auto;
-}
-#copybutton{
+#copy_button{
   width: 65px;
   height: 65px;
-  box-sizing: border-box;
   text-align: center;
   border-radius: 20px;
   border-width: 0.1em;
@@ -75,7 +67,7 @@ a{
   left:-1em;
   top:3px;
 }
-#copyicon{
+#copy_icon{
   font-size: 30px;
   transform: translate(5%,5%);
 }

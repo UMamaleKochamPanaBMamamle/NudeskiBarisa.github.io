@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/><title>File List</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <script src="./data.json"></script><script src="./codeurl.js"></script>
+  </head>
+  <body>
+    <ls id="file_list">
+      <script>
+        for(var i=0,url=location.href.slice(0,-1);i<data.length;i++) {
+          if(data[i]['filetype']!="file") document.write("<p><input type='button' onclick=\"location.href='./x?d="+encodeId(i)+"'\" value='"+data[i]['title']+"' id='file_button'>&emsp;<button onclick=\"navigator.clipboard.writeText('"+url+"x?d="+encodeId(i)+"')\" id='copy_button'><span class='material-icons' id='copy_icon'>content_copy</span></button></p>");
+          else document.write("<p><input type='button' onclick=\"location.href='"+data[i]['source']+"'\" value='"+data[i]['title']+"' id='file_button'>&emsp;<button onclick=\"navigator.clipboard.writeText('"+url+"x?d="+encodeId(i)+"')\" id='copy_button'><span class='material-icons' id='copy_icon'>content_copy</span></button></p>");
+        }
+      </script>
+    </ls>
+  </body>
+</html>

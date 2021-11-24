@@ -1,5 +1,5 @@
 var r = document.querySelector(':root');
-function resizevideo(){
+function resizeFileDisplay(){
   var height = window.innerWidth * res[1];
   if(height >= window.innerHeight){                                //16:9
     var width = window.innerHeight * res[0];
@@ -34,13 +34,27 @@ function resizevideo(){
     r.style.setProperty('--LposX', window.innerWidth/2-button.offsetWidth/2+"px");
   }
 }
-var button = document.getElementById('videolist');
-var res = [16/9,9/16], vid = document.getElementById('vid');
-resizevideo();
-vid.addEventListener("loadedmetadata", function(){
-  res = [this.videoWidth/this.videoHeight,this.videoHeight/this.videoWidth];
-  resizevideo();
-  window.addEventListener('resize', function(){
-    resizevideo();
-  });
-});
+function initResize(){
+  resizeFileDisplay();
+  window.addEventListener('resize', function(){resizeFileDisplay();});
+}
+var button = document.getElementById('filelist_button');
+var res = [16/9,9/16], file = document.getElementById('file');
+resizeFileDisplay();
+switch(data[x]['filetype']){
+  case "audio":
+    initResize();
+    break;
+  case "img":
+    file.onload = function(){
+      res = [file.naturalWidth/file.naturalHeight,file.naturalHeight/file.naturalWidth];
+      initResize();
+    }
+    break;
+  case "video":
+    file.addEventListener( "loadedmetadata", function(){
+      res = [this.videoWidth/this.videoHeight,this.videoHeight/this.videoWidth];
+      resize();
+    });
+    break;
+}
