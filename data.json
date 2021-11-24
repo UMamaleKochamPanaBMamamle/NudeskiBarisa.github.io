@@ -27,5 +27,9 @@ data = [
     filetype:"audio",
     title:"Grand Blue ED (Audio)",
     source:"./Grand Blue ED.mp3"
+  },{
+    filetype:"link",
+    title:"Rick Roll",
+    source:"https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   }
 ];
