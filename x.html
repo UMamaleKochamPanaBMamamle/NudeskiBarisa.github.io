@@ -27,12 +27,12 @@
     <script>
       if(data[x]['filetype'] != "img"){
         document.write("<"+data[x]['filetype']+" id='file' controls><source src='"+data[x]['source']+"' /></"+data[x]['filetype']+">");
-        document.getElementById('file').onload = function(){
+        window.onload = function(){
           var y = document.getElementById('file');
           if(localStorage.getItem('vol') == null) localStorage.setItem('vol', 1)
           y.volume = localStorage.getItem('vol');
           y.onvolumechange = function(){localStorage.setItem('vol', y.volume)};
-        };
+        }
       } else document.write("<img id='file' src='"+data[x]['source']+"' />");
     </script>
     <script src="./resize.js"></script>
