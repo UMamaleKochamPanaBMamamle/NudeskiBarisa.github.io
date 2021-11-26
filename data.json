@@ -75,5 +75,9 @@ data = [
     filetype:"link",
     title:"Rudy Baris",
     source:"https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },{
+    filetype:"audio",
+    title:"Ayaya.mp3",
+    source:"./ayaya.opus"
   }
 ];
