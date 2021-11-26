@@ -39,22 +39,26 @@ function initResize(){
   window.addEventListener('resize', function(){resizeFileDisplay();});
 }
 var button = document.getElementById('filelist_button');
-var res = [16/9,9/16], file=document.getElementById('file');
+var res = [16/9,9/16],file;
 resizeFileDisplay();
-switch(data[x]['filetype']){
-  case "audio":
-    initResize();
-    break;
-  case "img":
-    file.onload = function(){
-      res = [file.naturalWidth/file.naturalHeight,file.naturalHeight/file.naturalWidth];
+function checkResize(){
+  file=document.getElementById('file');
+  switch(data[x]['filetype']){
+    case "audio":
       initResize();
-    }
-    break;
-  case "video":
-    file.addEventListener( "loadedmetadata", function(){
-      res = [this.videoWidth/this.videoHeight,this.videoHeight/this.videoWidth];
-      initResize();
-    });
-    break;
+      break;
+    case "img":
+      file.onload = function(){
+        res = [file.naturalWidth/file.naturalHeight,file.naturalHeight/file.naturalWidth];
+        initResize();
+      }
+      break;
+    case "video":
+      file.addEventListener( "loadedmetadata", function(){
+        res = [this.videoWidth/this.videoHeight,this.videoHeight/this.videoWidth];
+        initResize();
+      });
+      break;
+  }
 }
+window.onload = checkResize();
