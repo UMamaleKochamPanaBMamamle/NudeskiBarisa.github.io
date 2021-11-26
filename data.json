@@ -1,35 +1,79 @@
 data = [
   {
-    filetype:"video",
-    title:"Kumo Desu Ga Nani Ka? Ending 1",
-    source:"./KumoED1.mkv"
+    filetype:"file",
+    title:"Shiginima Launcher",
+    source:"./Shiginima Launcher SE v4400.exe"
   },{
-    filetype:"video",
-    title:"Dirty AMV [Link Click]",
-    source:"./Dirty.webm"
+    filetype:"file",
+    title:"OptiFine",
+    source:"./OptiFine_1.16.5_HD_U_G8.jar"
   },{
-    filetype:"video",
-    title:"Build Divide: Code Black Opening 1",
-    source:"./BDivideOP1.mkv"
+    filetype:"file",
+    title:"Java",
+    source:"./OpenJDKJRE64_16.0.1_Build_9.paf.exe"
   },{
-    filetype:"video",
-    title:"Platinum End Opening 1",
-    source:"./PlatinumEndOP1.mkv"
+    filetype:"img",
+    title:"Pracownik Miesiąca",
+    source:"./pracownik miesiaca.jpg"
   },{
-    filetype:"video",
-    title:"Assasin Isekai Ending 1",
-    source:"./AssasinED1.mkv"
+    filetype:"img",
+    title:"Potężny Bóg Baris",
+    source:"./Potężny Bóg Baris.png"
   },{
-    filetype:"video",
-    title:"Grand Blue Opening",
-    source:"./Grand Blue OP.mkv"
+    filetype:"img",
+    title:"I am the Baris",
+    source:"./I am baris.png"
+  },{
+    filetype:"img",
+    title:"Leonardo Ba RiVinci",
+    source:"./baris art.jpg"
   },{
     filetype:"audio",
-    title:"Grand Blue ED (Audio)",
-    source:"./Grand Blue ED.mp3"
+    title:"Baris.mp3",
+    source:"./Baris.mp3"
+  },{
+    filetype:"audio",
+    title:"Baris Raczkowski",
+    source:"./Baris Raczkowski.mp3"
+  },{
+    filetype:"audio",
+    title:"BHBHARRISS",
+    source:"./BHBHARRISS.mp3"
+  },{
+    filetype:"audio",
+    title:"LOONG LOOONG Baris",
+    source:"./LOONG LOOONG Baris.mp3"
+  },{
+    filetype:"audio",
+    title:"Demonic Baris",
+    source:"./DemonicBaris.mp3"
+  },{
+    filetype:"video",
+    title:"MC Głosowanie na moba",
+    source:"./Mob Vote in a nutshell.mp4"
+  },{
+    filetype:"video",
+    title:"Long Long Baris Origin Story",
+    source:"./LOOONGLOOONGMAAAEEN.mkv"
+  },{
+    filetype:"img",
+    title:"Amogus",
+    source:"./Amogus.png"
+  },{
+    filetype:"img",
+    title:"Slavik",
+    source:"./Slavik.gif"
+  },{
+    filetype:"video",
+    title:"Russian Federation",
+    source:"https://cdn.discordapp.com/attachments/674677749184462901/905080231684087808/Unexpected-qkvnys.mp4"
   },{
     filetype:"link",
-    title:"Rick Roll",
+    title:"Classroom",
+    source:"https://classroom.google.com/u/1/c/MjI1ODY1ODYzNTRa"
+  },{
+    filetype:"link",
+    title:"Rudy Baris",
     source:"https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   }
 ];
