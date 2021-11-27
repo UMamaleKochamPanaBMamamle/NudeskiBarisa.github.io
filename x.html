@@ -25,16 +25,14 @@
   <body>
     <input type="button" onclick="location.href = './e'" value="File List" id="filelist_button"/>
     <script>
-      if(data[x]['filetype'] != "img"){
-        document.write("<"+data[x]['filetype']+" id='file' controls><source src='"+data[x]['source']+"' /></"+data[x]['filetype']+">");
-         function saveLoadVolume(){
-          var y = document.getElementById('file');
-          if(localStorage.getItem('vol') == null) localStorage.setItem('vol', 1)
-          y.volume = localStorage.getItem('vol');
-          y.addEventListener("volumechange", function(){localStorage.setItem('vol', y.volume)});
-        }
-        window.onload = saveLoadVolume();
-      } else document.write("<img id='file' src='"+data[x]['source']+"' />");
+      if(data[x]['filetype'] != "img") document.write("<"+data[x]['filetype']+" id='file' controls><source src='"+data[x]['source']+"' /></"+data[x]['filetype']+">");
+      else document.write("<img id='file' src='"+data[x]['source']+"' />");
+    </script>
+    <script>
+      while(y==null) var y = document.getElementById('file');
+      if(localStorage.getItem('vol') == null) localStorage.setItem('vol', 1)
+      y.volume = localStorage.getItem('vol');
+      y.addEventListener("volumechange", function(){localStorage.setItem('vol', y.volume)});
     </script>
     <script src="./resize.js"></script>
   </body>
