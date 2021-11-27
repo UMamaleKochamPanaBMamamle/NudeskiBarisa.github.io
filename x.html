@@ -31,7 +31,7 @@
           var y = document.getElementById('file');
           if(localStorage.getItem('vol') == null) localStorage.setItem('vol', 1)
           y.volume = localStorage.getItem('vol');
-          y.onvolumechange = function(){localStorage.setItem('vol', y.volume)};
+          y.addEventListener("volumechange", function(){localStorage.setItem('vol', y.volume)});
         }
         window.onload = saveLoadVolume();
       } else document.write("<img id='file' src='"+data[x]['source']+"' />");
