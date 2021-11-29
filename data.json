@@ -68,15 +68,15 @@ data = [
     title:"Russian Federation",
     source:"https://cdn.discordapp.com/attachments/674677749184462901/905080231684087808/Unexpected-qkvnys.mp4"
   },{
-    filetype:"video",
+    filetype:"img",
     title:"Baris po szkole",
     source:"./baris po szkole.jpg"
   },{
-    filetype:"video",
+    filetype:"img",
     title:"Bede pryskal",
     source:"./bede pryskal.jpg"
   },{
-    filetype:"video",
+    filetype:"img",
     title:"Baris po 2 bronksach",
     source:"./Baris po 2 bronksach.jpg"
   },{
