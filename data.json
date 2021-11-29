@@ -68,6 +68,18 @@ data = [
     title:"Russian Federation",
     source:"https://cdn.discordapp.com/attachments/674677749184462901/905080231684087808/Unexpected-qkvnys.mp4"
   },{
+    filetype:"video",
+    title:"Baris po szkole",
+    source:"./baris po szkole.jpg"
+  },{
+    filetype:"video",
+    title:"Bede pryskal",
+    source:"./bede pryskal.jpg"
+  },{
+    filetype:"video",
+    title:"Baris po 2 bronksach",
+    source:"./Baris po 2 bronksach.jpg"
+  },{
     filetype:"link",
     title:"Rudy Baris",
     source:"https://www.youtube.com/watch?v=dQw4w9WgXcQ"
